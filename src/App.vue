@@ -11,19 +11,12 @@
         <span>我是自定义的搜索</span>
       </template>
     </vxe-grid>
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
 export default {
   name: 'App',
-  components: {
-    HelloWorld
-  },
   data() {
     return {
       gridOptions: {
@@ -46,6 +39,14 @@ export default {
             },
           ]
         },
+        data: [
+          { name: "张三", id: 1, },
+          { name: "李四", id: 2, },
+        ],
+        columns: [
+          {field: 'id', title: "编号",},
+          {field: 'name', title: "姓名",},
+        ],
       },
     }
   }
