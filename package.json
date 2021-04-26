@@ -9,9 +9,11 @@
   },
   "dependencies": {
     "core-js": "^3.6.5",
+    "ramwin-vue": "0.0.1",
     "vue": "^2.6.11",
     "vxe-table": "^3.2.4",
-    "vxe-utils": "^2.0.1"
+    "vxe-utils": "^2.0.1",
+    "xe-utils": "^3.2.1"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.5.0",

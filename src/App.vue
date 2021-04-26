@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <myComponent />
     <h1>测试vxe-grid</h1>
     <vxe-grid
       v-bind="gridOptions"
@@ -15,8 +16,12 @@
 </template>
 
 <script>
+import myComponent from "ramwin-vue"
 export default {
   name: 'App',
+  components: {
+    myComponent
+  },
   data() {
     return {
       gridOptions: {
